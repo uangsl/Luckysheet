@@ -526,9 +526,13 @@ export function initialSheetBar(){
 
         let $t = $("#luckysheet-sheet-list");
 
-        let left = $(this).offset().left - $('#' + Store.container).offset().left;
-        let bottom = $(this).height() + $('#luckysheet-sta-content').height() + 12;
-        $t.css({left: left + 'px', bottom: bottom + 'px'}).show();
+        // let left = $(this).offset().left - $('#' + Store.container).offset().left;
+        //let bottom = $(this).height() + $('#luckysheet-sta-content').height() + 12;
+        // $t.css({left: left + 'px', bottom: bottom + 'px'}).show();
+        
+        let left = $(this).offset().left;
+        let bottom = $(this).height();
+        $t.css({left: left + 'px', bottom: bottom + 'px', position: 'fixed'}).show();
         $("#luckysheet-input-box").removeAttr("style");
     });
 
