@@ -166,9 +166,12 @@ luckysheet.create = function (setting) {
     Store.devicePixelRatio = Math.ceil(devicePixelRatio);
 
     //loading
-    const loadingObj=luckysheetlodingHTML("#" + container)
-    Store.loadingObj=loadingObj
-
+    if(extendsetting.loadingMask){
+        Store.loadingObj=extendsetting.loadingMask
+    }else{
+        const loadingObj=luckysheetlodingHTML("#" + container)
+        Store.loadingObj=loadingObj
+    }
     if (loadurl == "") {
         sheetmanage.initialjfFile(menu, title);
         // luckysheetsizeauto();
