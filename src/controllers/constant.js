@@ -13,7 +13,7 @@ const gridHTML = function(){
     return `<div class="luckysheet">
                     <canvas id="luckysheetTableContentF" style="display:none;" class="luckysheetTableContent"></canvas> 
                     <div class="luckysheet-work-area luckysheet-noselected-text"> 
-                        <div id ="luckysheet_info_detail" class="luckysheet_info_detail"> 
+                        <div id ="luckysheet_info_detail" class="luckysheet_info_detail" style="display:none;"> 
                             <div data-tips="${locale_info.return}" id="luckysheet_info_detail_title" class="luckysheet_info_detail_back"> 
                                 <i style="color:#444D5A;" class="fa fa-angle-left fa-2x" aria-hidden="true"></i> 
                             </div> 
